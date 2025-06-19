@@ -1,4 +1,4 @@
-# NotéDex
+# Breloom
 
 An open-source collection of Pokémon images and assets to assist with fan-made projects, tools, and databases.
 
@@ -8,7 +8,7 @@ An open-source collection of Pokémon images and assets to assist with fan-made 
 
 ## 🎒 About
 
-**NotéDex Git** is a shared collection of curated files — including sprite images, type icons, generation-based folders, and other visual assets — to support developers and fans building Pokémon-related tools and trackers.
+**Breloom Git** is a shared collection of curated files — including sprite images, type icons, generation-based folders, and other visual assets — to support developers and fans building Pokémon-related tools and trackers.
 
 These resources were originally compiled to support [NotéDex Notion](#want-more-notédex-notion), our premium all-in-one Pokémon trainer’s notebook built in Notion. We’ve open-sourced the core assets here so others can easily build their own Pokédex, apps, or tools.
 
@@ -16,7 +16,7 @@ These resources were originally compiled to support [NotéDex Notion](#want-more
 
 ## 📁 Repository Structure
 
-📁 NotéDex/
+📁 Breloom/
 
 ├── **[Games](https://github.com/BEAMMWorks/NoteDex/tree/main/Games)**/
 
@@ -64,4 +64,4 @@ Use and share freely — but not for resale or commercial redistribution.
 ---
 
 **Catch smarter. Train harder. Build better.**  
-— The NotéDex Team
+— BEAMMWorks
