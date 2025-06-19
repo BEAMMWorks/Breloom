@@ -1,77 +1,67 @@
 # NotéDex
 
-**NotéDex** is a Pokémon database system built for seamless integration with [Notion](https://www.notion.so/). Whether you're an EV trainer, a breeder, or simply building your dream Pokédex, NotéDex makes tracking your Pokémon easier and more powerful using Notion's flexible databases.
+An open-source collection of Pokémon images and assets to assist with fan-made projects, tools, and databases.
 
-## 🎯 Purpose
-
-To provide a complete, modular system for Pokémon trainers who use Notion to:
-- Track Pokémon base stats, types, and evolutions
-- Plan EV training and stat optimization
-- Manage breeding projects
-- View movesets, locations, and items
-- Explore generation-specific data and strategies
-
-## 📦 Features
-
-- ✅ Prebuilt Notion templates for every generation
-- 🧬 Breeding calculator (move + stat inheritance)
-- 💪 EV training optimizer with Pokérus, items, and vitamins
-- 🔍 Advanced filters and views for easy access
-- 🔁 Future support for dynamic updates through APIs
-
-## 🚧 Status
-
-This project is under active development. New templates and automation tools will be released regularly.
-
-## 🗃 File Structure
-
-📁 NotéDex/
-
-├── data/ # Pokémon data files (CSV/JSON) 
-
-├── notion_templates/ # Ready-to-import Notion templates 
-
-├── scripts/ # Automation scripts and Notion integration 
-
-└── README.md # This file 
-
-
-## 📌 How to Use
-
-1. Open your Notion workspace.
-2. Import the template from the `notion_templates` folder.
-3. Customize the database for your needs.
-4. Use the provided filters, relations, and rollups to explore Pokémon data.
-5. (Optional) Use the automation scripts to populate/update your database.
-
-## 📸 Screenshots
-
-_Coming soon — previews of the Notion layout and advanced views._
-
-## 🧠 Inspiration
-
-NotéDex was inspired by the complexity of competitive training and breeding in Pokémon and the need for better personal tools to organize data, goals, and strategies.
-
-## 📅 Roadmap
-
-- [x] Base Pokédex for Gen I-VIII
-- [x] EV tracker with stat caps
-- [ ] Move compatibility and egg group analysis
-- [ ] Item lookup and held item guides
-- [ ] AI-based team builder and synergy checker
-
-## 🤝 Contributing
-
-Pull requests and issues are welcome! Feel free to:
-- Add data for missing generations or forms
-- Help expand move/breeding compatibility
-- Share your feedback and suggestions
-
-## 📜 License
-
-MIT License — free to use, modify, and share.
+> **Disclaimer:** This project is not affiliated with, endorsed, or supported by Nintendo, Game Freak, or The Pokémon Company. All rights to Pokémon names, sprites, and related content belong to their respective owners. This repository is provided strictly for educational and fan-use purposes.
 
 ---
 
-**Trainer-tested. Pokédex-approved.**  
-Catch, breed, and battle smarter with **NotéDex**.
+## 🎒 About
+
+**NotéDex Git** is a shared collection of curated files — including sprite images, type icons, generation-based folders, and other visual assets — to support developers and fans building Pokémon-related tools and trackers.
+
+These resources were originally compiled to support [NotéDex Notion](#want-more-notédex-notion), our premium all-in-one Pokémon trainer’s notebook built in Notion. We’ve open-sourced the core assets here so others can easily build their own Pokédex, apps, or tools.
+
+---
+
+## 📁 Repository Structure
+
+📁 NotéDex/
+
+├── Games/
+
+├── TypeIcons/
+
+├── Badges/
+
+└── README.md
+
+
+> 🔁 This collection will continue to grow as more art and visual resources are added or improved.
+
+---
+
+## 🤖 Use Cases
+
+- Building your own Notion-based Pokédex
+- Creating browser-based EV or stat calculators
+- Customizing your own Pokémon-themed tools or websites
+- Adding sprite assets to personal hobby projects
+
+---
+
+## 🔗 Want More? — NotéDex Notion
+
+Looking for the full trainer toolkit?
+
+> **[NotéDex Notion](https://yourlinkhere)** is a premium Pokémon trainer's notebook for Notion.  
+> Track EVs, plan your dream team, manage breeding, and much more — built by fans, for fans.
+
+---
+
+## 🧠 Contributions
+
+Have better quality assets? Want to help organize sprites by form or region?  
+Pull requests are welcome!
+
+---
+
+## 📜 License
+
+This repository is shared under the Creative Commons Attribution-NonCommercial 4.0 International License.  
+Use and share freely — but not for resale or commercial redistribution.
+
+---
+
+**Catch smarter. Train harder. Build better.**  
+— The NotéDex Team
