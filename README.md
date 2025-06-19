@@ -67,4 +67,4 @@ Use and share freely — but not for resale or commercial redistribution.
 ---
 
 **Catch smarter. Train harder. Build better.**  
-— BEAMMWorks
+—— BEAMMWorks
