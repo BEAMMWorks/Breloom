@@ -26,10 +26,14 @@ This project is under active development. New templates and automation tools wil
 ## 🗃 File Structure
 
 📁 NotéDex/
-├── data/ # Pokémon data files (CSV/JSON)
-├── notion_templates/ # Ready-to-import Notion templates
-├── scripts/ # Automation scripts and Notion integration
-└── README.md # This file
+
+├── data/ # Pokémon data files (CSV/JSON) 
+
+├── notion_templates/ # Ready-to-import Notion templates 
+
+├── scripts/ # Automation scripts and Notion integration 
+
+└── README.md # This file 
 
 
 ## 📌 How to Use
