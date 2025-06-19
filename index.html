@@ -1,64 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Breloom Assets</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
+    :root {
+      --primary: #58b368;
+      --secondary: #f7f7f7;
+      --accent: #222;
+      --link: #2979ff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       font-family: 'Segoe UI', sans-serif;
-      background: #f9f9f9;
       margin: 0;
-      padding: 0;
+      background: var(--secondary);
+      color: var(--accent);
     }
+
     header {
-      background-color: #6ab04c;
+      background: linear-gradient(120deg, #6ab04c, #26de81);
+      padding: 2rem 1rem;
       color: white;
       text-align: center;
-      padding: 1rem;
     }
-    img.banner {
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    .banner {
       width: 100%;
       max-height: 300px;
       object-fit: cover;
+      display: block;
     }
+
     main {
-      padding: 2rem;
-      max-width: 900px;
+      max-width: 960px;
       margin: auto;
+      padding: 2rem;
     }
-    h1, h2 {
-      color: #222;
+
+    h2 {
+      margin-top: 2rem;
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 0.25rem;
     }
+
     .button {
-      display: inline-block;
-      padding: 0.5rem 1rem;
-      margin-top: 1rem;
-      background: #6ab04c;
+      background: var(--primary);
       color: white;
+      padding: 0.75rem 1.25rem;
+      border-radius: 6px;
       text-decoration: none;
+      display: inline-block;
+      margin: 1rem 0;
+      transition: background 0.2s ease;
+    }
+
+    .button:hover {
+      background: #4caf50;
+    }
+
+    .carousel {
+      overflow-x: auto;
+      display: flex;
+      gap: 10px;
+      padding: 1rem 0;
+    }
+
+    .carousel img {
+      height: 64px;
+      flex-shrink: 0;
+      transition: transform 0.2s;
+    }
+
+    .carousel img:hover {
+      transform: scale(1.15);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .folder {
+      background: white;
+      border: 1px solid #ccc;
       border-radius: 8px;
+      padding: 1rem;
+      text-align: center;
+      transition: box-shadow 0.2s;
+    }
+
+    .folder:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .folder a {
+      text-decoration: none;
+      color: var(--accent);
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #999;
+      margin: 2rem 0 1rem;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>🧬 Breloom Asset Repository</h1>
-    <p>Open-source Pokémon images and resources for your fan projects</p>
+    <h1>🧬 Breloom</h1>
+    <p>Open-source Pokémon assets for your fan-made tools, Pokédexes, and more!</p>
   </header>
 
-  <img src="https://raw.githubusercontent.com/BEAMMWorks/Breloom/main/Breloom/Breloom_Banner.png" class="banner" alt="Breloom Banner">
+  <img src="https://raw.githubusercontent.com/BEAMMWorks/Breloom/main/Breloom/Breloom_Banner.png" class="banner" alt="Breloom Banner" />
 
   <main>
     <h2>About</h2>
-    <p>This collection provides sprites, type icons, and resources used in our NotéDex Notion tool and other fan-made Pokémon projects.</p>
+    <p><strong>Breloom</strong> is a growing collection of free-to-use Pokémon icons, sprites, and resource packs designed for developers, content creators, and fans working on Pokémon tools, databases, or trackers. These assets helped build our premium <a href="https://yourlinktoNoteDex.com" target="_blank">NotéDex Notion</a> — and now we’re sharing them with the community!</p>
 
-    <a href="https://github.com/BEAMMWorks/Breloom" class="button">View on GitHub</a>
+    <a class="button" href="https://github.com/BEAMMWorks/Breloom" target="_blank">📂 View on GitHub</a>
 
-    <h2>Want More?</h2>
-    <p>Check out <a href="https://yourlinktoNoteDex.com">NotéDex Notion</a>, our full-featured trainer’s notebook in Notion!</p>
+    <h2>🔁 Type Icon Carousel</h2>
+    <div class="carousel">
+      <img src="https://raw.githubusercontent.com/BEAMMWorks/Breloom/main/Types/Normal.png" alt="Normal">
+      <img src="https://raw.githubusercontent.com/BEAMMWorks/Breloom/main/Types/Fire.png" alt="Fire">
+      <img src="https://raw.githubusercontent.com/BEAMMWorks/Breloom/main/Types/Fighting.png" alt="Fighting">
+      <img src="https://raw.githubusercontent.com/BEAMMWorks/Breloom/main/Types/Water.png" alt="Water">
+      <img src="https://raw.githubusercontent.com/BEAMMWorks/Breloom/main/Types/Flying.png" alt="Flying">
+      <img src="https://raw.githubusercontent.com/BEAMMWorks/Breloom/main/Types/Grass.png" alt="Grass">
+      <img src="https://raw.githubusercontent.com/BEAMMWorks/Breloom/main/Types/Poison.png" alt="Poison">
+      <img src="https://raw.githubusercontent.com/BEAMMWorks/Breloom/main/Types/Electric.png" alt="Electric">
+      <img src="https://raw.githubusercontent.com/BEAMMWorks/Breloom/main/Types/Ground.png" alt="Ground">
+      <img src="https://raw.githubusercontent.com/BEAMMWorks/Breloom/main/Types/Psychic.png" alt="Psychic">
+      <img src="https://raw.githubusercontent.com/BEAMMWorks/Breloom/main/Types/Rock.png" alt="Rock">
+      <img src="https://raw.githubusercontent.com/BEAMMWorks/Breloom/main/Types/Ice.png" alt="Ice">
+      <img src="https://raw.githubusercontent.com/BEAMMWorks/Breloom/main/Types/Bug.png" alt="Bug">
+      <img src="https://raw.githubusercontent.com/BEAMMWorks/Breloom/main/Types/Dragon.png" alt="Dragon">
+      <img src="https://raw.githubusercontent.com/BEAMMWorks/Breloom/main/Types/Ghost.png" alt="Ghost">
+      <img src="https://raw.githubusercontent.com/BEAMMWorks/Breloom/main/Types/Dark.png" alt="Dark">
+      <img src="https://raw.githubusercontent.com/BEAMMWorks/Breloom/main/Types/Steel.png" alt="Steel">
+      <img src="https://raw.githubusercontent.com/BEAMMWorks/Breloom/main/Types/Fairy.png" alt="Fairy">
+      <img src="https://raw.githubusercontent.com/BEAMMWorks/Breloom/main/Types/Stellar.png" alt="Stellar">
+    </div>
+
+    <h2>📁 Explore the Assets</h2>
+    <div class="grid">
+      <div class="folder"><a href="https://github.com/BEAMMWorks/Breloom/tree/main/Games" target="_blank">🎮 Games</a></div>
+      <div class="folder"><a href="https://github.com/BEAMMWorks/Breloom/tree/main/Types" target="_blank">🔋 Type Icons</a></div>
+      <div class="folder"><a href="https://github.com/BEAMMWorks/Breloom/tree/main/Badges" target="_blank">🏅 Badges</a></div>
+      <div class="folder"><a href="https://github.com/BEAMMWorks/Breloom/tree/main/Breloom" target="_blank">🖼️ Banners</a></div>
+    </div>
+
+    <h2>🎓 Want More?</h2>
+    <p><a href="https://yourlinktoNoteDex.com" target="_blank"><strong>NotéDex Notion</strong></a> is our premium Notion-based trainer’s notebook for EV training, breeding, stats tracking, and more.</p>
+    <a class="button" href="https://yourlinktoNoteDex.com" target="_blank">✨ View NotéDex</a>
   </main>
+
+  <footer>
+    Built by BEAMMWorks • Pokémon content © Nintendo/Game Freak • Fan project – not affiliated
+  </footer>
 
 </body>
 </html>
