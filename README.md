@@ -1,6 +1,6 @@
 <!-- Banner -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/BEAMMWorks/Breloom/main/breloom/breloom_banner.png" alt="Breloom Banner" style="max-width: 100%;">
+  <img src="https://raw.githubusercontent.com/BEAMMWorks/Breloom/main/Breloom/Breloom_Banner.png" alt="Breloom Banner" style="max-width: 100%;">
 </p>
 
 An open-source collection of Pokémon images and assets to assist with fan-made projects, tools, and databases.
@@ -67,4 +67,4 @@ Use and share freely — but not for resale or commercial redistribution.
 ---
 
 **Catch smarter. Train harder. Build better.**  
-— BEAMMWorks
+—— BEAMMWorks
