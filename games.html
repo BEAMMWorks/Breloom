@@ -25,27 +25,36 @@
     }
 
     .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-      gap: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
       padding: 2rem;
       max-width: 1200px;
       margin: auto;
     }
 
-    .gallery img {
+    .group-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 1rem;
+    }
+
+    .card {
+      width: 160px;
+      text-align: center;
+      flex-shrink: 0;
+    }
+
+    .card img {
       width: 100%;
       border-radius: 12px;
       transition: transform 0.2s ease;
       box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     }
 
-    .gallery img:hover {
+    .card img:hover {
       transform: scale(1.05);
-    }
-
-    .card {
-      text-align: center;
     }
 
     .card p {
@@ -53,13 +62,6 @@
       font-weight: bold;
       font-size: 0.9rem;
     }
-    
-    .group {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 1rem;
-    margin-bottom: 3rem; /* space between groups */
-  }
 
     footer {
       text-align: center;
@@ -91,72 +93,100 @@
   </header>
 
   <div class="gallery">
-    <!-- Image Cards -->
-    <!-- Repeat block -->
 
-    <div class="group">
-    <div class="card"><img src=".../Pokemon Green.jpg"><p>Green</p></div>
-    <div class="card"><img src=".../Pokemon Red.jpg"><p>Red</p></div>
-    <div class="card"><img src=".../Pokemon Blue.jpg"><p>Blue</p></div>
-    <div class="card"><img src=".../Pokemon Yellow.jpg"><p>Yellow</p></div>
-  </div>
+    <div class="group-row">
+      <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Green.jpg"><p>Green</p></div>
+      <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Red.jpg"><p>Red</p></div>
+      <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Blue.jpg"><p>Blue</p></div>
+      <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Yellow.jpg"><p>Yellow</p></div>
+    </div>
 
-    <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Green.jpg"><p>Green</p></div>
-    <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Red.jpg"><p>Red</p></div>
-    <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Blue.jpg"><p>Blue</p></div>
-    <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Yellow.jpg"><p>Yellow</p></div>
-    
-    <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Gold.jpg"><p>Gold</p></div>
-    <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Silver.jpg"><p>Silver</p></div>
-    <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Crystal.jpg"><p>Crystal</p></div>
-    
-    <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Ruby.jpg"><p>Ruby</p></div>
-    <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Sapphire.jpg"><p>Sapphire</p></div>
-    
-    <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon FireRed.jpg"><p>FireRed</p></div>
-    <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon LeafGreen.jpg"><p>LeafGreen</p></div>
-    <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Emerald.jpg"><p>Emerald</p></div>
-    
-    <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Diamond.jpg"><p>Diamond</p></div>
-    <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Pearl.jpg"><p>Pearl</p></div>
-    <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Platinum.jpg"><p>Platinum</p></div>
-    
-    <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon HeartGold.jpg"><p>HeartGold</p></div>
-    <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon SoulSilver.jpg"><p>SoulSilver</p></div>
-    
-    <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Black.jpg"><p>Black</p></div>
-    <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon White.jpg"><p>White</p></div>
-    
-    <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Black 2.jpg"><p>Black 2</p></div>
-    <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon White 2.jpg"><p>White 2</p></div>
-    
-    <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon X.jpg"><p>X</p></div>
-    <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Y.jpg"><p>Y</p></div>
-    
-    <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Omega Ruby.jpg"><p>Omega Ruby</p></div>
-    <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Alpha Sapphire.jpg"><p>Alpha Sapphire</p></div>
-    
-    <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Sun.jpg"><p>Sun</p></div>
-    <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Moon.jpg"><p>Moon</p></div>
-    
-    <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Ultra Sun.jpg"><p>Ultra Sun</p></div>
-    <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Ultra Moon.jpg"><p>Ultra Moon</p></div>
-    
-    <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Lets Go Pikachu.jpg"><p>Let's Go Pikachu</p></div>
-    <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Lets Go Eevee.jpg"><p>Let's Go Eevee</p></div>
-    
-    <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Sword.jpg"><p>Sword</p></div>
-    <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Shield.jpg"><p>Shield</p></div>
-    
-    <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Brilliant Diamond.jpg"><p>Brilliant Diamond</p></div>
-    <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Shining Pearl.jpg"><p>Shining Pearl</p></div>
-    
-    <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Legends Arceus.jpg"><p>Legends: Arceus</p></div>
-    
-    <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Scarlet.jpg"><p>Scarlet</p></div>
-    <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Violet.jpg"><p>Violet</p></div>
-    
-    <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Legends Z-A.jpg"><p>Legends: Z-A</p></div>
+    <div class="group-row">
+      <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Gold.jpg"><p>Gold</p></div>
+      <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Silver.jpg"><p>Silver</p></div>
+      <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Crystal.jpg"><p>Crystal</p></div>
+    </div>
+
+    <div class="group-row">
+      <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Ruby.jpg"><p>Ruby</p></div>
+      <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Sapphire.jpg"><p>Sapphire</p></div>
+    </div>
+
+    <div class="group-row">
+      <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon FireRed.jpg"><p>FireRed</p></div>
+      <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon LeafGreen.jpg"><p>LeafGreen</p></div>
+      <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Emerald.jpg"><p>Emerald</p></div>
+    </div>
+
+    <div class="group-row">
+      <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Diamond.jpg"><p>Diamond</p></div>
+      <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Pearl.jpg"><p>Pearl</p></div>
+      <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Platinum.jpg"><p>Platinum</p></div>
+    </div>
+
+    <div class="group-row">
+      <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon HeartGold.jpg"><p>HeartGold</p></div>
+      <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon SoulSilver.jpg"><p>SoulSilver</p></div>
+    </div>
+
+    <div class="group-row">
+      <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Black.jpg"><p>Black</p></div>
+      <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon White.jpg"><p>White</p></div>
+    </div>
+
+    <div class="group-row">
+      <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Black 2.jpg"><p>Black 2</p></div>
+      <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon White 2.jpg"><p>White 2</p></div>
+    </div>
+
+    <div class="group-row">
+      <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon X.jpg"><p>X</p></div>
+      <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Y.jpg"><p>Y</p></div>
+    </div>
+
+    <div class="group-row">
+      <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Omega Ruby.jpg"><p>Omega Ruby</p></div>
+      <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Alpha Sapphire.jpg"><p>Alpha Sapphire</p></div>
+    </div>
+
+    <div class="group-row">
+      <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Sun.jpg"><p>Sun</p></div>
+      <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Moon.jpg"><p>Moon</p></div>
+    </div>
+
+    <div class="group-row">
+      <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Ultra Sun.jpg"><p>Ultra Sun</p></div>
+      <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Ultra Moon.jpg"><p>Ultra Moon</p></div>
+    </div>
+
+    <div class="group-row">
+      <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Lets Go Pikachu.jpg"><p>Let's Go Pikachu</p></div>
+      <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Lets Go Eevee.jpg"><p>Let's Go Eevee</p></div>
+    </div>
+
+    <div class="group-row">
+      <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Sword.jpg"><p>Sword</p></div>
+      <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Shield.jpg"><p>Shield</p></div>
+    </div>
+
+    <div class="group-row">
+      <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Brilliant Diamond.jpg"><p>Brilliant Diamond</p></div>
+      <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Shining Pearl.jpg"><p>Shining Pearl</p></div>
+    </div>
+
+    <div class="group-row">
+      <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Legends Arceus.jpg"><p>Legends: Arceus</p></div>
+    </div>
+
+    <div class="group-row">
+      <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Scarlet.jpg"><p>Scarlet</p></div>
+      <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Violet.jpg"><p>Violet</p></div>
+    </div>
+
+    <div class="group-row">
+      <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Legends Z-A.jpg"><p>Legends: Z-A</p></div>
+    </div>
+
   </div>
 
   <footer>
