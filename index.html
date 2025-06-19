@@ -9,7 +9,6 @@
       --primary: #58b368;
       --secondary: #f7f7f7;
       --accent: #222;
-      --link: #2979ff;
     }
 
     * {
@@ -23,23 +22,34 @@
       color: var(--accent);
     }
 
-    header {
-      background: linear-gradient(120deg, #6ab04c, #26de81);
-      padding: 2rem 1rem;
-      color: white;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      margin: 0;
-    }
-
     .banner {
       width: 100%;
-      max-height: 300px;
+      max-height: 320px;
       object-fit: cover;
       display: block;
+    }
+
+    .carousel-container {
+      width: 100%;
+      overflow: hidden;
+      background: white;
+      padding: 1rem 0;
+    }
+
+    .carousel-track {
+      display: flex;
+      width: fit-content;
+      animation: scroll 30s linear infinite;
+    }
+
+    .carousel-track img {
+      height: 64px;
+      margin: 0 10px;
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
     }
 
     main {
@@ -62,28 +72,10 @@
       text-decoration: none;
       display: inline-block;
       margin: 1rem 0;
-      transition: background 0.2s ease;
     }
 
     .button:hover {
       background: #4caf50;
-    }
-
-    .carousel {
-      overflow-x: auto;
-      display: flex;
-      gap: 10px;
-      padding: 1rem 0;
-    }
-
-    .carousel img {
-      height: 64px;
-      flex-shrink: 0;
-      transition: transform 0.2s;
-    }
-
-    .carousel img:hover {
-      transform: scale(1.15);
     }
 
     .grid {
@@ -122,21 +114,34 @@
 </head>
 <body>
 
-  <header>
-    <h1>🧬 Breloom</h1>
-    <p>Open-source Pokémon assets for your fan-made tools, Pokédexes, and more!</p>
-  </header>
-
+  <!-- Breloom Banner -->
   <img src="https://raw.githubusercontent.com/BEAMMWorks/Breloom/main/Breloom/Breloom_Banner.png" class="banner" alt="Breloom Banner" />
 
-  <main>
-    <h2>About</h2>
-    <p><strong>Breloom</strong> is a growing collection of free-to-use Pokémon icons, sprites, and resource packs designed for developers, content creators, and fans working on Pokémon tools, databases, or trackers. These assets helped build our premium <a href="https://yourlinktoNoteDex.com" target="_blank">NotéDex Notion</a> — and now we’re sharing them with the community!</p>
+  <!-- Auto Carousel -->
+  <div class="carousel-container">
+    <div class="carousel-track">
+      <!-- Repeat the icons twice for smooth infinite scroll -->
+      <img src="https://raw.githubusercontent.com/BEAMMWorks/Breloom/main/Types/Normal.png" alt="Normal">
+      <img src="https://raw.githubusercontent.com/BEAMMWorks/Breloom/main/Types/Fire.png" alt="Fire">
+      <img src="https://raw.githubusercontent.com/BEAMMWorks/Breloom/main/Types/Fighting.png" alt="Fighting">
+      <img src="https://raw.githubusercontent.com/BEAMMWorks/Breloom/main/Types/Water.png" alt="Water">
+      <img src="https://raw.githubusercontent.com/BEAMMWorks/Breloom/main/Types/Flying.png" alt="Flying">
+      <img src="https://raw.githubusercontent.com/BEAMMWorks/Breloom/main/Types/Grass.png" alt="Grass">
+      <img src="https://raw.githubusercontent.com/BEAMMWorks/Breloom/main/Types/Poison.png" alt="Poison">
+      <img src="https://raw.githubusercontent.com/BEAMMWorks/Breloom/main/Types/Electric.png" alt="Electric">
+      <img src="https://raw.githubusercontent.com/BEAMMWorks/Breloom/main/Types/Ground.png" alt="Ground">
+      <img src="https://raw.githubusercontent.com/BEAMMWorks/Breloom/main/Types/Psychic.png" alt="Psychic">
+      <img src="https://raw.githubusercontent.com/BEAMMWorks/Breloom/main/Types/Rock.png" alt="Rock">
+      <img src="https://raw.githubusercontent.com/BEAMMWorks/Breloom/main/Types/Ice.png" alt="Ice">
+      <img src="https://raw.githubusercontent.com/BEAMMWorks/Breloom/main/Types/Bug.png" alt="Bug">
+      <img src="https://raw.githubusercontent.com/BEAMMWorks/Breloom/main/Types/Dragon.png" alt="Dragon">
+      <img src="https://raw.githubusercontent.com/BEAMMWorks/Breloom/main/Types/Ghost.png" alt="Ghost">
+      <img src="https://raw.githubusercontent.com/BEAMMWorks/Breloom/main/Types/Dark.png" alt="Dark">
+      <img src="https://raw.githubusercontent.com/BEAMMWorks/Breloom/main/Types/Steel.png" alt="Steel">
+      <img src="https://raw.githubusercontent.com/BEAMMWorks/Breloom/main/Types/Fairy.png" alt="Fairy">
+      <img src="https://raw.githubusercontent.com/BEAMMWorks/Breloom/main/Types/Stellar.png" alt="Stellar">
 
-    <a class="button" href="https://github.com/BEAMMWorks/Breloom" target="_blank">📂 View on GitHub</a>
-
-    <h2>🔁 Type Icon Carousel</h2>
-    <div class="carousel">
+      <!-- Clone for smooth loop -->
       <img src="https://raw.githubusercontent.com/BEAMMWorks/Breloom/main/Types/Normal.png" alt="Normal">
       <img src="https://raw.githubusercontent.com/BEAMMWorks/Breloom/main/Types/Fire.png" alt="Fire">
       <img src="https://raw.githubusercontent.com/BEAMMWorks/Breloom/main/Types/Fighting.png" alt="Fighting">
@@ -157,6 +162,13 @@
       <img src="https://raw.githubusercontent.com/BEAMMWorks/Breloom/main/Types/Fairy.png" alt="Fairy">
       <img src="https://raw.githubusercontent.com/BEAMMWorks/Breloom/main/Types/Stellar.png" alt="Stellar">
     </div>
+  </div>
+
+  <main>
+    <h2>About</h2>
+    <p><strong>Breloom</strong> is a growing collection of free-to-use Pokémon icons, sprites, and resource packs designed for developers, content creators, and fans working on Pokémon tools, databases, or trackers.</p>
+
+    <a class="button" href="https://github.com/BEAMMWorks/Breloom" target="_blank">📂 View on GitHub</a>
 
     <h2>📁 Explore the Assets</h2>
     <div class="grid">
