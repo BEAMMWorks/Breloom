@@ -18,9 +18,9 @@ These resources were originally compiled to support [NotéDex Notion](#want-more
 
 📁 NotéDex/
 
-├── Games/
+├── **[Games](https://github.com/BEAMMWorks/NoteDex/tree/main/Games)**/
 
-├── TypeIcons/
+├── **[TypeIcons](https://github.com/BEAMMWorks/NoteDex/tree/main/Types)**/
 
 ├── **[Badges](https://github.com/BEAMMWorks/NoteDex/tree/main/Badges)**/
 
