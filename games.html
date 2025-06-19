@@ -53,6 +53,13 @@
       font-weight: bold;
       font-size: 0.9rem;
     }
+    
+    .group {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-bottom: 3rem; /* space between groups */
+  }
 
     footer {
       text-align: center;
@@ -86,6 +93,14 @@
   <div class="gallery">
     <!-- Image Cards -->
     <!-- Repeat block -->
+
+    <div class="group">
+    <div class="card"><img src=".../Pokemon Green.jpg"><p>Green</p></div>
+    <div class="card"><img src=".../Pokemon Red.jpg"><p>Red</p></div>
+    <div class="card"><img src=".../Pokemon Blue.jpg"><p>Blue</p></div>
+    <div class="card"><img src=".../Pokemon Yellow.jpg"><p>Yellow</p></div>
+  </div>
+
     <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Green.jpg"><p>Green</p></div>
     <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Red.jpg"><p>Red</p></div>
     <div class="card"><img src="https://raw.githubusercontent.com/BEAMMWorks/NoteDex/main/Games/Pokemon Blue.jpg"><p>Blue</p></div>
