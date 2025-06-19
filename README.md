@@ -22,7 +22,7 @@ These resources were originally compiled to support [NotéDex Notion](#want-more
 
 ├── TypeIcons/
 
-├── Badges/
+├── **[Badges](https://github.com/BEAMMWorks/NoteDex/tree/main/Badges)**/
 
 └── README.md
 
