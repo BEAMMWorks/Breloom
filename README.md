@@ -18,11 +18,11 @@ These resources were originally compiled to support [NotéDex Notion](#want-more
 
 📁 Breloom/
 
-├── **[Games](https://github.com/BEAMMWorks/NoteDex/tree/main/Games)**/
+├── **[Games](https://github.com/BEAMMWorks/Breloom/tree/main/Games)**/
 
-├── **[TypeIcons](https://github.com/BEAMMWorks/NoteDex/tree/main/Types)**/
+├── **[TypeIcons](https://github.com/BEAMMWorks/Breloom/tree/main/Types)**/
 
-├── **[Badges](https://github.com/BEAMMWorks/NoteDex/tree/main/Badges)**/
+├── **[Badges](https://github.com/BEAMMWorks/Breloom/tree/main/Badges)**/
 
 └── README.md
 
