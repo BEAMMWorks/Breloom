@@ -1,4 +1,7 @@
-# Breloom
+<!-- Banner -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/BEAMMWorks/Breloom/main/breloom/breloom_banner.png" alt="Breloom Banner" style="max-width: 100%;">
+</p>
 
 An open-source collection of Pokémon images and assets to assist with fan-made projects, tools, and databases.
 
